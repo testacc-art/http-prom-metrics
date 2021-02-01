@@ -19,7 +19,7 @@ httpmetric = {editable = true,path = "."}
 lxml = "==4.4.1"
 
 [requires]
-python_version = "3.9"
+python_version = "3"
 
 [scripts]
 test = "py.test -v --cov=httpmetrics --cov-report term-missing --cov-report=xml -v"
