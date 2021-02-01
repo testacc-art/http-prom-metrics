@@ -1,0 +1,25 @@
+categories:
+  - title: 'Mudanças incompatíveis'
+    label: 'breaking-change'
+  - title: 'Bugs Resolvidos'
+    label: 'bug'
+  - title: 'Novas Features'
+    label: 'feature'
+  - title: 'Documentação'
+    label: 'docs'
+change-template: '- #$NUMBER $TITLE (@$AUTHOR)'
+version-resolver:
+  major:
+    labels:
+      - 'breaking-change'
+  minor:
+    labels:
+      - 'feature'
+  patch:
+    labels:
+      - 'bug'
+  default: patch
+template: |
+  ## Changelog for $RESOLVED_VERSION
+
+  $CHANGES
