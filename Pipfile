@@ -17,6 +17,7 @@ black = "==18.9b0"
 isort = {extras = ["pipfile"],version = "==4.3.15"}
 httpmetric = {editable = true,path = "."}
 lxml = "==4.4.1"
+coveralls = "==3.0.0"
 
 [requires]
 python_version = "3"
