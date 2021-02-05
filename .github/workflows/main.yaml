@@ -41,16 +41,11 @@ jobs:
         run: pipenv run test
 
       - name: Coveralls
-        uses: AndreMiras/coveralls-python-action@develop
         if: matrix.python == '3.9'
-        with:
-          parallel: true
-
-      - name: Coveralls Finished
-        if: matrix.python == '3.9'
-        uses: AndreMiras/coveralls-python-action@develop
-        with:
-          parallel-finished: true
+        env:
+          GITHUB_TOKEN: ${{github.token}}
+        run: |
+          coveralls
 
   lint:
     name: lint
