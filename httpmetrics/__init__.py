@@ -17,10 +17,6 @@ app = App()
 
 @app.http.get(["/other"])
 async def _other():
-    c = 1
-    b = 1
-    a = 1
-    e = 1
     return json_response({})
 
 
