@@ -6,6 +6,8 @@ on:
       - master
       - main
 
+env:
+  COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
 jobs:
   tests:
