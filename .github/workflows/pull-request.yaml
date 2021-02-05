@@ -42,6 +42,7 @@ jobs:
         if: matrix.python == '3.9'
         run: |
           coveralls
+          coveralls --finish
 
 
   lint:
