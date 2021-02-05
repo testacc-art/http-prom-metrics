@@ -15,6 +15,13 @@ alert_test = Gauge(
 app = App()
 
 
+@app.http.get(["/other"])
+async def _other():
+    b = 1
+    a = 1
+    return json_response({})
+
+
 @app.http.get(["/echo/{value}"])
 @parse_path
 async def echo(value: int):
