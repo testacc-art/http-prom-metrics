@@ -45,7 +45,6 @@ jobs:
         if: matrix.python == '3.9'
         with:
           parallel: true
-          flag-name: unittest
 
       - name: Coveralls Finished
         if: matrix.python == '3.9'
