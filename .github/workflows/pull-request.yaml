@@ -40,6 +40,8 @@ jobs:
 
       - name: Coveralls
         if: matrix.python == '3.9'
+        env:
+          GITHUB_TOKEN: ${{secrets.github_token}}
         run: |
           coveralls
           coveralls --finish
