@@ -13,7 +13,7 @@ env:
 jobs:
   tests:
     name: unittests
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
@@ -51,7 +51,7 @@ jobs:
 
   lint:
     name: lint
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: install {libxml2,libxslt}-dev
         run: sudo apt-get install libxml2-dev libxslt-dev
